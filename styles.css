@@ -1,0 +1,147 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    flex-direction: column; /* Coloca logo e menu em uma coluna */
+    justify-content: flex-start; /* Logo no topo */
+    align-items: center; /* Centraliza horizontalmente */
+    padding: 10px 20px;
+    background-color: #999999;
+    height: 150px; /* Altura do cabeçalho */
+}
+
+/* Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: auto; /* Mantém a proporção da logo */
+    height: 100px; /* Aumenta a altura da logo, ajuste conforme necessário */
+    max-height: 100%;
+}
+
+/* Menu - Fica na mesma linha */
+nav {
+    display: flex;
+    justify-content: center; /* Centraliza o menu */
+    width: 100%;
+    margin-top: 10px; /* Espaço entre a logo e o menu */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexbox em linha */
+}
+
+nav ul li {
+    margin-right: 20px; /* Espaço entre os itens */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+        height: 130px; /* Ajusta altura para telas médias */
+    }
+
+    .logo-container img {
+        height: 50px; /* Reduz a altura da logo em telas médias */
+    }
+
+    nav ul {
+        flex-direction: row; /* Garante que fiquem na linha */
+        justify-content: center; /* Centraliza na tela */
+    }
+
+    nav ul li {
+        margin-right: 15px; /* Ajusta o espaçamento entre os itens */
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 120px; /* Ajusta altura para telas pequenas */
+    }
+
+    .logo-container img {
+        height: 40px; /* Diminui mais a altura da logo */
+    }
+
+    nav ul li {
+        margin-right: 10px; /* Ajusta o espaçamento entre os itens */
+    }
+}
+
+/* Seção de notícias */
+main {
+    padding: 20px;
+}
+
+.noticias h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.noticias article {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.noticias article h3 {
+    font-size: 1.2rem;
+}
+
+.noticias article p {
+    color: #555;
+}
+
+.noticias article a {
+    color: #333;
+    text-decoration: none;
+}
+
+.noticias article a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background-color: #999999;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
